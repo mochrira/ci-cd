@@ -7,4 +7,4 @@ services:
     volumes:
       - ../:/var/www/html
     ports:
-      - 8092:80
+      - 8093:80
