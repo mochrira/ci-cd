@@ -1,7 +1,7 @@
 version: '3.0'
-name: ci_cd
+name: ci_cd_prod
 services:
-  ci_cd:
+  prod:
     container_name: ci_cd_prod
     image: mochrira/dev:latest
     volumes:
