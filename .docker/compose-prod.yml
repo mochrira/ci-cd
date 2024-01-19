@@ -1,0 +1,10 @@
+version: '3.0'
+name: ci_cd
+services:
+  ci_cd:
+    container_name: ci_cd_prod
+    image: mochrira/dev:latest
+    volumes:
+      - ../:/var/www/html
+    ports:
+      - 8092:80
