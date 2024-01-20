@@ -3,7 +3,7 @@ name: ci_cd_dev
 services:
   dev:
     container_name: ci_cd_dev
-    image: mochrira/dev:latest
+    image: mochrira/dev:7.4.33
     volumes:
       - ../:/var/www/html
     ports:
