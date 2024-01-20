@@ -1,3 +1,3 @@
 #!/bin/sh
 git pull origin master
-echo "Hello World !"
+echo "Hello World 2 !"
