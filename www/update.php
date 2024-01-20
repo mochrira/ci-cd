@@ -5,6 +5,7 @@ chdir(__DIR__.'/../');
 $method = $_SERVER['REQUEST_METHOD'];
 if($method == 'POST') {
     $tag = $_POST['tag'];
+    echo shell_exec("git pull origin refs/tags/".$tag);
     echo shell_exec("git checkout tags/".$tag);
     die();
 }
