@@ -6,6 +6,6 @@
     <title>It Works !</title>
 </head>
 <body>
-    <h1>It Works like charm !</h1>
+    <h1>Version 0.2.1 !</h1>
 </body>
 </html>
