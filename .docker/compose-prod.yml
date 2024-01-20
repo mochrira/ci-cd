@@ -5,6 +5,7 @@ services:
     container_name: ci_cd_prod
     image: mochrira/dev:7.4.33
     volumes:
+      - vhost.conf:/etc/apache2/conf.d/vhost.conf
       - ../:/workspace
     ports:
       - 8093:80
