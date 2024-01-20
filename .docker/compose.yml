@@ -5,6 +5,6 @@ services:
     container_name: ci_cd_dev
     image: mochrira/dev:7.4.33
     volumes:
-      - ../:/var/www/html
+      - ../:/workspace
     ports:
       - 8092:80
