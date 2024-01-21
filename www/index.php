@@ -6,6 +6,6 @@
     <title>It Works !</title>
 </head>
 <body>
-    <h1>Version 0.2.5 !</h1>
+    <h1>Version 0.2.6 !</h1>
 </body>
 </html>
