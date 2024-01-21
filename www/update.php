@@ -5,13 +5,13 @@ chdir(__DIR__.'/../');
 $method = $_SERVER['REQUEST_METHOD'];
 if($method == 'POST') {
     $tag = $_POST['tag'];
-    echo shell_exec("git pull origin refs/tags/".$tag);
-    echo shell_exec("git checkout tags/".$tag." -b tags-".$tag);
+    echo exec("git pull origin refs/tags/".$tag);
+    echo exec("git checkout tags/".$tag." -b tags-".$tag);
     die();
 }
 
-shell_exec("git fetch --tags");
-$latestTag = shell_exec("git describe --tags \"$(git rev-list --tags --max-count=1)\"");
+exec("git fetch --tags");
+$latestTag = exec("git describe --tags \"$(git rev-list --tags --max-count=1)\"");
 ?>
 
 <form action="update.php" method="POST">
